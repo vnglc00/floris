@@ -1,0 +1,320 @@
+@font-face {
+	font-family: 'mononoki';
+	src: url('fuentes/mononoki-Bold.otf');
+}
+
+@font-face {
+	font-family: 'mononoki2';
+	src: url('fuentes/mononoki-Regular.otf');
+}
+
+@media screen and (max-width: 1400px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	html {
+		font-size: 10px;
+	}
+
+	a {
+		justify-content: flex-start;
+		margin: 10px;
+	}
+
+	.btn-toggle {
+		margin: 0;
+	}
+}
+
+body {
+	background: #F7F0F5;
+	font-family: 'mononoki';
+	font-size: 1rem;
+	text-align: left;
+	margin: 0;
+	padding: 0px 0px;
+
+}
+
+.seccionToggle {
+	display: none;
+	background: #7AB53C;
+	color: #3F3444;
+	height: calc(100vh - 125px);
+	text-align: center;
+	padding: 50px 0;
+}
+
+.wrap {
+	font-size: 2rem;
+	margin: auto;
+	max-width: 90%;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#logofloris {
+	width: 50%;
+	position: relative;
+	right: -25%;
+
+}
+
+.seccionToggle button {
+	background: none;
+	color: #3F3444;
+	border: 3px solid #3F3444;
+	border-radius: 10px;
+	padding: 8px 8px;
+	display: inline-block;
+	transition: 0.3s all ease;
+}
+
+.seccionToggle button:hover {
+	background: #F7F0F5;
+}
+
+.btn-toggle {
+	background: #3F3444;
+	color: #F7F0F5;
+	padding: 0;
+	height: 25px;
+	line-height: 25px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+.btn-toggle:hover {
+	text-decoration: none;
+}
+
+header {
+	height: 50px;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.grupo {
+	color: #3F3444;
+	font-size: 1.25rem;
+	position: relative; z-index: 20;
+}
+
+a {
+	color: #3F3444;
+	font-size: inherit;
+	text-decoration: none;
+	padding: 25px;
+	position: relative; z-index: 20;
+}
+
+a:hover.nav-link1 {
+	color: #E84855;
+	text-decoration: none;
+}
+
+a:hover.nav-link2 {
+	color: #F39400;
+	text-decoration: none;
+}
+
+a:hover.nav-link3 {
+	color: #7AB53C;
+	text-decoration: none;
+}
+
+a:hover.nav-link4 {
+	color: #02A8D2;
+	text-decoration: none;
+}
+
+a:hover.nav-link5 {
+	color: #93127D;
+	text-decoration: none;
+}
+
+.cuadradito {
+	position: absolute; z-index: 1;
+    width: 20px;
+    height: 5px;
+    background-color: #93127D;
+    animation-name: cuadradito;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cuadradito {
+	0% {left: 0px;}
+	50% {left: 100%}
+	100% {left: 0px;}
+}
+
+.maria {
+	position: absolute; z-index: 1;
+    width: 20px;
+    height: 5px;
+    background-color: #E84855;
+    animation-name: maria;
+    animation-duration: 8s;
+    animation-delay: -3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes maria {
+	0% {left: 0px; top: 0;}
+	50% {left: 100%; top: 0;}
+	100% {left: 0px; top: 0;}
+}
+
+.jose{
+	position: absolute; z-index: 1;
+    width: 20px;
+    height: 5px;
+    background-color: #F39400;
+    animation-name: jose;
+    animation-duration: 7s;
+    animation-delay: -7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jose {
+	0% {left: 0px; top: 5px;}
+	50% {left: 100%; top: 5px;}
+	100% {left: 0px; top: 5px;}
+}
+
+.paz{
+	position: absolute; z-index: 1;
+    width: 20px;
+    height: 5px;
+    background-color: #7AB53C;
+    animation-name: paz;
+    animation-duration: 7s;
+    animation-delay: -10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes paz {
+	0% {left: 0px; top: 15px;}
+	50% {left: 100%; top: 15px;}
+	100% {left: 0px; top: 15px;}
+}
+
+.manuel{
+	position: absolute; z-index: 1;
+    width: 20px;
+    height: 5px;
+    background-color: #F39400;
+    animation-name: manuel;
+    animation-duration: 8s;
+    animation-delay: -6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes manuel {
+	0% {left: 0px; top: 45px;}
+	50% {left: 100%; top: 45px;}
+	100% {left: 0px; top: 45px;}
+}
+
+.tulipan{
+	position: absolute; z-index: 1;
+    width: 20px;
+    height: 5px;
+    background-color: #02A8D2;
+    animation-name: tulipan;
+    animation-duration: 8s;
+    animation-delay: -1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes tulipan {
+	0% {left: 0px; top: 35px;}
+	50% {left: 100%; top: 35px;}
+	100% {left: 0px; top: 35px;}
+}
+
+#inicio {
+	margin-left: 30px;
+	margin-top: 200px;
+	margin-bottom: 10vh;
+}
+
+.zonas {
+	margin: 30px;
+}
+
+.titulo {
+	font-size: 1.25rem;
+}
+
+#nortegrande {
+	margin-bottom: 35vh;
+}
+
+#nortechico {
+	margin-bottom: 23vh;
+}
+
+#centro {
+	margin-bottom: 30vh;
+}
+
+#sur {
+	margin-bottom: 17vh;
+}
+
+#austral {
+	margin-bottom: 15vh;
+}
+
+.flores {
+	width: 40%;
+	border-radius: 10px;
+}
+
+footer {
+	bottom: 100%;
+	background: #3F3444;
+	height: 70px;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+span {
+	margin-bottom: 0;
+}
+
+.info {
+	color: #F7F0F5;
+	margin-top: 10px;
+	margin-bottom: 0;
+	display: inline-flex;
+	align-items: center;
+}
+
+#claudio {
+	color: #F7F0F5;
+	margin-bottom: 0;
+}
+
+.dts {
+	margin-left: 10px;
+}
